@@ -277,12 +277,6 @@ section {
   margin-top: 2rem;
 }
 
-/* here */
-.details-container:hover{ 
-    cursor: pointer;
-    transform: rotateY(180deg);
-}
-
 .about-details-container {
   justify-content: center;
   flex-direction: column;
@@ -305,6 +299,13 @@ section {
   bottom: 2.5rem;
 }
 
+/* here */
+
+.details-container:hover{ 
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -312,15 +313,17 @@ section {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  text-align: center;
+  /* text-align: center; */
   transition: transform 900ms;
   transform-style: preserve-3d;
+  display: flex;
 }
 
 /* */
 .card-front,
 .card-back {
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .card-back {
