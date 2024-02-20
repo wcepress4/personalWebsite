@@ -52,7 +52,7 @@ a {
 }
 
 a:hover {
-  color: grey;
+  color: #e31b6d;
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
@@ -299,35 +299,31 @@ section {
   bottom: 2.5rem;
 }
 
-/* here */
-
-.details-container:hover{ 
-  cursor: pointer;
-  transform: rotateY(180deg);
-}
-
 .details-container {
-  padding: 1.5rem;
+  padding: 12.5px;
   flex: 1;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   /* text-align: center; */
-  transition: transform 900ms;
-  transform-style: preserve-3d;
+}
+
+.align {
   display: flex;
 }
 
-/* */
-.card-front,
-.card-back {
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+.iconExp {
+  cursor: pointer;
+  height: 2rem;
+  margin-top: 3px;
 }
 
-.card-back {
-    transform: rotateY(180deg);
+.iconEdu {
+  cursor: pointer;
+  height: 2rem;
+  margin-top: 2px;
+  margin-left: 7px;
 }
 
 .section-container {
@@ -456,4 +452,12 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+.highlight {
+  color: #e31b6d;
+}
+
+.bold {
+  font-weight: bold;
 }
